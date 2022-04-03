@@ -2,7 +2,7 @@
 
 // Imports
 import React, { useState } from "react";
-import { Divider } from "antd";
+import { Button, Divider, Form } from "antd";
 import GUN from "gun";
 // Components
 import TitleSegment from "./components/TitleSegment";
@@ -75,7 +75,6 @@ export default function App() {
         });
     };
 
-
     // Returns a JSX component for the overall application
     return (
         <div
@@ -88,6 +87,7 @@ export default function App() {
                 svgNameList={svgNameList}
                 changeCurrentSVG={changeCurrentSVG}
             />
+
             <Divider />
             <Viewer svgData={svg.svg} />
             <Divider />

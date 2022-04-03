@@ -2,6 +2,7 @@
 
 // Imports
 import React from "react";
+import { Button, Divider, Form } from "antd";
 
 // Viewer segment container
 export default function Viewer({ svgData }) {
@@ -10,6 +11,7 @@ export default function Viewer({ svgData }) {
     // Returns a JSX component for the SVG display
     return (
         <>
+
             <img
                 src={`data:image/svg+xml;utf8,${encodeURIComponent(svgData)}`}
                 alt="SVG currently being displayed"
@@ -17,6 +19,7 @@ export default function Viewer({ svgData }) {
                     maxWidth: 420, // Stop the SVG from expanding to the moon
                 }}
             />
+
         </>
     );
 }
